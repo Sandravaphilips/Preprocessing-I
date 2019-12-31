@@ -107,6 +107,7 @@ html, body {
 	main {
 		div:first-child {
 			.row();
+			margin-bottom: 30px;
 			section {
 				width: 48%;
 				h2 {
@@ -125,7 +126,34 @@ html, body {
 					}
 				}
 			}
-			
+		}
+
+		div:last-child {
+			margin-bottom: 25px;
+			h3 {
+				font-size: 150%;
+				margin-bottom: 10px;
+			}
+			table {
+				width: 100%;
+				border-top: 1px solid @light;
+				tr {
+					td {
+						padding: 10px 5px;
+					}
+				}
+				tr:nth-child(2), tr:last-child {
+					background-color: @light;
+				}
+			}
+		}
+	}
+
+	footer {
+		background-color: @dark;
+		padding: 15px 0 30px;
+		p {
+			text-align: center;
 		}
 	}
 }
